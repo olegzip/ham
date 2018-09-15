@@ -1,55 +1,62 @@
 *{
     margin: 0;
     padding: 0;
-
     font-family: Montserrat, sans-serif;
     text-transform: none;
 }
+
 .modal-block {
     box-sizing: content-box;
     width: 35%;
     height: auto;
-    max-height: 690px;
-    min-width: 440px;
+    /*max-height: 690px;*/
+    /*min-width: 440px;*/
     margin: 10vh auto;
     padding: 30px 60px;
-    background-color: #fff;
     border-radius: 10px;
+    background-color:olivedrab;
 }
 .client-block__container {
-    max-height: 630px;
+    /*max-height: 630px;*/
 }
-.client-block__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
+/*.client-block__header {*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
 .client-block__social-networks-sign {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
-    margin-bottom: 35px;
+    justify-content:space-between;
+    margin-left: 250px;
+
+    /*position: absolute;*/
+    /*right:-60px;*/
+    /*margin-right: 50px;*/
 }
 .client-block__header-text_big {
     color: #434343;
-    font-size: 20px;
-    position: relative;
+    font-size: 15px;
+    /*position: fixed;*/
 }
 .client-block__header-text_big::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #3cb878;
-    position: absolute;
-    left: -60px;
+    /*content: "";*/
+    /*position: absolute;*/
+    /*left: -60px;*/
+
+}
+.client-block__sn-text{
+    color: #18cfab;
+    font-size: 15px;
+    /*position: absolute;*/
 }
 .client-block__button {
     display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+    /*justify-content: center;*/
+    /*box-sizing: border-box;*/
     padding: 0 15px;
-    width: 48%;
-    min-width: 155px;
+    width: 250px;
     height: 45px;
     color: #ffffff;
     font-size: 16px;
@@ -58,66 +65,86 @@
     border-radius: 3px;
     cursor: pointer;
 }
-
 .client-block__button-text::before {
     content: "";
     margin: 0 15px;
 }
 .button-facebook {
     background-color: #305db8;
+    margin-bottom: 5px;
 }
-.logo-facebook {
-    width: 20px;
-    background-position: -85px 0;
-}
+
 .text-facebook::before {
     border-left: 1px solid #2953a8;
-}
-.logo-google {
-    width: 27px;
-    background-position: -105px 0;
+    margin-left: 5px;
+
 }
 .button-google {
     background-color: #df4a32;
+    margin-bottom: 5px;
 }
 .text-google::before {
     border-left: 1px solid #ca412a;
+    margin-left: 5px;
+}
+.button-twitter{
+    background-color: deepskyblue;
+    margin-bottom: 5px;
+}
+.text-twitter::before {
+    border-left: 1px solid #2953a8;
+    margin-left: 5px;
 }
 .client-block__measure {
     text-align: center;
     margin-bottom: 15px;
 }
-.client-block__measure span {
-    width: 20%;
-    color: #848484;
-    display: inline-block;
-    position:relative;
+/*.client-block__measure span {*/
+    /*width: 20%;*/
+    /*color: #848484;*/
+    /*display: inline-block;*/
+    /*position:relative;*/
+    /*text-transform: revert;*/
 
+/*}*/
+/*.client-block__measure span::before,*/
+/*.client-block__measure span::after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*height: 5px;*/
+    /*border-top: 1px solid #eaeaea;*/
+    /*!*top: 50%;*!*/
+    /*width: 200%;*/
+    /*transform: rotate(100grad);*/
+/*}*/
+
+.or_text {
+    display: inline-block;
 }
-.client-block__measure span::before,
-.client-block__measure span::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-top: 1px solid #eaeaea;
-    top: 50%;
-    width: 200%;
+
+
+/*.client-block__measure span::before {*/
+    /*right: calc(100% - 15px);*/
+    /*margin-right: 15px;*/
+/*}*/
+/*.client-block__measure span::after {*/
+    /*left: calc(100% - 15px);;*/
+    /*margin-left: 15px;*/
+/*}*/
+
+.order{
+    padding-bottom: 200px;
 }
-.client-block__measure span::before {
-    right: calc(100% - 15px);
-    margin-right: 15px;
-}
-.client-block__measure span::after {
-    left: calc(100% - 15px);;
-    margin-left: 15px;
-}
+
 .order__field {
     box-sizing: border-box;
     border: 2px solid #f7f7f7;
     padding: 15px;
-    width: 100%;
+    width: 45%;
     border-radius: 3px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .order__field::placeholder {
     color: #cccccc;
@@ -148,17 +175,18 @@
     top: 0;
     border: 1px solid #eaeaea;
 }
-.order__checkbox:checked + .register__label::before {
+.order__checkbox:checked + .order__label::before {
     background-position: -130px 0;
 }
 .order__button {
     margin-top: 30px;
     background-color: #3cb878;
-    width: 100%;
+    width: 45%;
 }
-.order__checkbox, .register__label {
+.order__checkbox, .order__label {
     cursor: pointer;
 }
-.pass{
 
+
+.pass{
 }
