@@ -8,6 +8,7 @@
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
 <body>
 <header class="main-header">
@@ -23,30 +24,27 @@
     </div>
 
     <ul class="main-header__nav">
-        <li class="main-header__nav__item"><a href="#">home</a></li>
-        <li class="main-header__nav__item"><a href="#">about</a></li>
-        <li class="main-header__nav__item"><a href="#">skills</a></li>
-        <li class="main-header__nav__item"><a href="#">service</a></li>
-        <li class="main-header__nav__item"><a href="#">work</a></li>
-        <li class="main-header__nav__item"><a href="#">testimonial</a></li>
-        <li class="main-header__nav__item"><a href="#">blog</a></li>
-        <li class="main-header__nav__item"><a href="#">team</a></li>
-        <li class="main-header__nav__item"><a href="#">contact</a></li>
+        <li class="main-header__nav__item"><a href="#home">home</a></li>
+        <li class="main-header__nav__item"><a href="#about">about</a></li>
+        <li class="main-header__nav__item"><a href="#skills">skills</a></li>
+        <li class="main-header__nav__item"><a href="#service">service</a></li>
+        <li class="main-header__nav__item"><a href="#work">work</a></li>
+        <li class="main-header__nav__item"><a href="#testimonial">testimonial</a></li>
+        <li class="main-header__nav__item"><a href="#blog">blog</a></li>
+        <li class="main-header__nav__item"><a href="#team">team</a></li>
+        <li class="main-header__nav__item"><a href="#contact">contact</a></li>
     </ul>
     <div class="main-header__nav__search">
         <a href="#"><i class="fas fa-search"></i></a>
     </div>
-
 </header>
-
-
 <section class="main-section">
     <h2 class="main-section__h2--bold">THE HAM IS <span class="text--em">WORDPRESS THEME</span></h2>
     <h1 class="main-section__h1--bold">WE ARE CREATIVE</h1>
     <h2 class="main-section__h2--thin">Just Buy And Enjoy These Awesome Features</h2>
     <div class="btn-wrapper">
         <a href="#" class="btn">EXPLORE NOW</a>
-        <a href="#" class="btn">PURCHASE NOW</a>
+        <a href="#" class="btn modalBtn">PURCHASE NOW</a>
     </div>
 </section>
 <footer class="main-section__footer">
@@ -77,36 +75,80 @@
 </footer>
 <section class="our-services">
     <div class="container">
-        <div class="our-services__main">
-            <h2 class="section-header">Our Services</h2>
-            <ul class="our-services__nav">
-                <li class="our-services__nav__item"><a href="#">Web Design</a></li>
-                <li class="our-services__nav__item"><a href="#">Graphic Design</a></li>
-                <li class="our-services__nav__item"><a href="#">Online Support</a></li>
-                <li class="our-services__nav__item"><a href="#">App Design</a></li>
-                <li class="our-services__nav__item"><a href="#">Online Marketing</a></li>
-                <li class="our-services__nav__item"><a href="#">Seo Service</a></li>
-            </ul>
-            <div class="our-services__description">
-                <img src="img/our_services.png" alt="service img" class="our-services__description__img">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur at delectus doloremque
-                    ducimus eaque impedit incidunt inventore iste nostrum, nulla quibusdam ratione repellat sed,
-                    similique ut vero voluptas voluptatem voluptates voluptatum. Ab aspernatur cumque deleniti dicta
-                    dignissimos dolor facilis hic iusto laboriosam laudantium non, pariatur porro possimus repellendus,
-                    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea harum ipsa molestiae placeat
-                    recusandae suscipit voluptatibus. Amet cupiditate et eveniet ipsum labore natus officia, possimus!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque, ipsum omnis porro
-                    possimus similique?</p>
-            </div>
+
+        <h2 class="section-header">Our Services</h2>
+        <ul class="our-services__nav">
+            <li class="our-services__nav__item item-active">Web Design</li>
+            <li class="our-services__nav__item">Graphic Design</li>
+            <li class="our-services__nav__item">Online Support</li>
+            <li class="our-services__nav__item">App Design</li>
+            <li class="our-services__nav__item">Online Marketing</li>
+            <li class="our-services__nav__item">Seo Service</li>
+        </ul>
+        <div class="our-services__description">
+            <img src="img/our_services.png" alt="service img" class="our-services__description__img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis, dicta, expedita
+                ipsam ipsum iste laboriosam minus molestias, placeat quod repudiandae suscipit tenetur voluptatibus.
+                A architecto at beatae debitis, deleniti dignissimos distinctio dolor dolores dolorum eaque fuga
+                fugiat fugit illum iste laudantium mollitia, neque nisi odit perferendis quam quos saepe sunt vel
+                vero voluptatum. Adipisci doloribus quibusdam sunt velit voluptas.</p>
+        </div>
+        <div class="our-services__description">
+            <img src="img/graphic_design/graphic-design1.jpg" alt="service img"
+                 class="our-services__description__img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum in iure perspiciatis, quis
+                quisquam tempore temporibus velit. Inventore natus necessitatibus odit porro qui! Doloremque itaque
+                laboriosam, nulla officiis quia ratione sed. Accusantium, architecto et id libero minus nisi
+                perspiciatis totam! Ab ad assumenda, consequuntur corporis dolorem exercitationem explicabo ipsam
+                minus molestias nobis nostrum tempora ut. Assumenda, dolores doloribus et laudantium magnam
+                molestias nesciunt numquam qui quibusdam recusandae sequi totam.</p>
+        </div>
+        <div class="our-services__description">
+            <img src="img/graphic_design/graphic-design12.jpg" alt="service img"
+                 class="our-services__description__img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ea necessitatibus nemo nostrum
+                provident! Accusamus accusantium amet aspernatur autem doloribus eligendi eos et exercitationem
+                expedita harum id illum incidunt ipsa minus nemo nesciunt nisi provident quibusdam, quis quo sed
+                similique sunt tempore temporibus ullam unde voluptate? Eveniet nesciunt odit sequi.</p>
+        </div>
+        <div class="our-services__description">
+            <img src="img/graphic_design/graphic-design7.jpg" alt="service img"
+                 class="our-services__description__img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corporis dicta numquam quae, ratione
+                sed soluta sunt voluptatem. Alias aliquid architecto at autem culpa cum cupiditate delectus ducimus
+                ea eaque, eum ex explicabo fugiat fugit id illum in incidunt, iusto laboriosam laborum magnam
+                molestiae mollitia neque obcaecati omnis porro possimus praesentium quibusdam quis, quisquam
+                reiciendis repudiandae sed voluptatem! A alias corporis dolore est ipsam soluta vero. Dolore eaque
+                excepturi laudantium non placeat porro possimus quod sapiente ullam, voluptatibus? Laboriosam,
+                rem!</p>
+        </div>
+        <div class="our-services__description">
+            <img src="img/graphic_design/graphic-design8.jpg" alt="service img"
+                 class="our-services__description__img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis eaque earum,
+                explicabo, in inventore, laudantium magnam optio pariatur similique suscipit veritatis voluptates?
+                Ad deserunt eligendi eos error ipsam maiores odit, pariatur recusandae sunt voluptates? Commodi
+                dolorum repudiandae ullam.</p>
+        </div>
+        <div class="our-services__description">
+            <img src="img/graphic_design/graphic-design11.jpg" alt="service img"
+                 class="our-services__description__img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur cupiditate deserunt
+                doloribus ducimus eum facilis iure laboriosam laborum magni nemo nesciunt nostrum, quam saepe sequi
+                vel, vitae. Accusamus accusantium distinctio dolorem eius harum natus quo recusandae, repellendus
+                repudiandae similique. Aliquam amet aperiam architecto aspernatur, beatae deleniti doloremque
+                ducimus eos eum ex impedit libero nostrum obcaecati officiis quibusdam rem saepe sint soluta
+                suscipit vel. At eum fugiat iure quaerat qui.</p>
         </div>
     </div>
-    <footer class="our-services__footer">
-        <div class="our-services__footer__content-wrapper">
-            <h2><span class="text--em">EVERYTHING IS READY, JUST BUY AND INSTALL NOW</span></h2>
-            <p>Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</p>
-            <a href="#" class="btn">PURCHASE NOW</a>
-        </div>
-    </footer>
+</section>
+<section class="everything-is-ready">
+    <div class="container">
+        <h2><span class="text--em">EVERYTHING IS READY, JUST BUY AND INSTALL NOW</span></h2>
+        <p>Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for
+            you</p>
+        <a class="btn modalBtn" href="#">PURCHASE NOW</a>
+    </div>
 </section>
 <section class="our-amazing-work">
     <div class="our-amazing-work__wrapper">
@@ -121,21 +163,121 @@
         <div class="our-amazing-work__gallery"></div>
         <a href="#" class="btn"><i class="fas fa-plus"></i> LOAD MORE</a>
     </div>
-
 </section>
 <section class="breaking-news">
     <div class="container">
         <h2 class="section-header">Breaking News</h2>
-        <div class="breaking-news__gallery"></div>
+        <div class="breaking-news__gallery">
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer1.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Image Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer2.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer3.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer4.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer5.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer6.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer7.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+            <div class="breaking-news__gallery__item">
+                <img src="img/news_img/Layer8.png" alt="news 1">
+                <a href=""></a>
+                <p class="breaking-news__gallery__item__text">Amazing Blog Post</p>
+                <p>By admin | 2 comment</p>
+                <div class="breaking-news__gallery__item__date">12<br> Feb</div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="what-people-say">
     <div class="container">
         <h2 class="section-header">What People Say About theHam</h2>
         <div class="what-people-say__quot">&#10075&#10075</div>
-        <div class="what-people-say__reviews">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, modi!
+        <a name="testimonial" href="#"></a>
+        <div class="slider-text">
+            <div>
+                <p>קִיפּוֹד קָטָן, קִיפּוֹד דוֹקרָן
+                    הָלַך בשׂדֵה קוֹצים,
+                    הוא קצת מִיהֵר לִפגוֹש חָבֵר,
+                    בקצֵה שׂדֵרָת עֵצִים.
+                    פִּתאוֹם הוא חָש דקִירָה באַף
+                    עמד תחתיו נִדהַם.
+                    "האם דקרתי את עצמי
+                    או קוֹץ נִנעַץ לי שם?</p>
+                <p><span>ERAN LASSER</span><br>CO-Founder (DAN.IT Kyiv)</p>
+            </div>
+            <div><p>Kyiv is the capital of Ukraine.
+                Kyiv is situated on the banks of the Dnieper river.
+                Kyiv is a large political, industrial and cultural centre. There are many banks, shops, theatres,
+                museums, libraries in Kyiv.
+                The central street of the capital is Khreshchatyk. There are many fine buildings in Khreshchatyk.
+                Kyiv is especially beautiful in spring when the chestnut trees are in blossom.</p>
+                <p><span>JULIA SHTALTOVNA</span><br>Head of Soft-Skills (DAN.IT Kyiv)</p></div>
+            <div><p>Під час практики хлопці ознайомились з законодавчими та іншими нормативними актами, що регулюють
+                діяльність IT-сектору України, методичними рекомендаціями щодо організації менторського нагляду,
+                схвалених науково-методичною радою при Генеральній прокуратурі України та інші. Ознайомились з
+                методиками написання прогграм на Java, Javascript та ін...</p>
+                <p><span>VOVA DERKACH</span><br>Program Developer (Destination Unknown)</p></div>
+            <div><p>Благодаря двухэтапному отбору кандидатов на обучение, мы формируем группы мотивированных,
+                амбициозных и целеустремленных студентов. Занимаясь в командах, они пошагово достигают высоких
+                результатов в работе над проектами, и на выходе гарантированно становятся первоклассными
+                специалистами</p>
+                <p><span>EDDIE PRILEPSKI</span><br>CO-Founder (DAN.IT Kyiv)</p></div>
+            <div><p>¯ \ _ (ツ) _ / ¯</p>
+                <p><span>Mr. ZOZICH</span><br>Course Coordinator(DAN.IT Kyiv)</p></div>
         </div>
-        <div class="what-people-say__carousel"></div>
+        <div class="slider-img">
+            <div><img src="img/people_img/people2.jpg" alt=""></div>
+            <div><img src="img/people_img/people3.jpg" alt=""></div>
+            <div><img src="img/people_img/people4.jpg" alt=""></div>
+            <div><img src="img/people_img/people5.jpg" alt=""></div>
+            <div><img src="img/people_img/people1.jpg" alt=""></div>
+        </div>
+        <div class="slider-nav">
+            <div><img src="img/people_img/people5.jpg" alt=""></div>
+            <div><img src="img/people_img/people1.jpg" alt=""></div>
+            <div><img src="img/people_img/people2.jpg" alt=""></div>
+            <div><img src="img/people_img/people3.jpg" alt=""></div>
+            <div><img src="img/people_img/people4.jpg" alt=""></div>
+        </div>
     </div>
 </section>
 <section class="gallery-of-best-images">
@@ -148,5 +290,49 @@
 <footer class="copyright">
     &copy Copyright 2015&#8194<span class="text--em">theHam</span>&#8194| All Rights Reserved
 </footer>
+
+<!--MODAL WINDOW-->
+
+<div class="modal-window">
+    <div class="modal-window__container">
+        <form action="index.html">
+            <div class="row">
+                <div class="vertical-line">
+                    <span class="vertical-text">or</span>
+                </div>
+                <div class="modal-window__col">
+                    <div class="hide-md-lg">
+                        <p class="modal-window__block-header">Order your theme now!</p>
+                    </div>
+                    <input type="text" name="username" placeholder="Your mail*" required>
+                    <input type="password" name="password" placeholder="Your password*" required>
+                    <input class="modalBtn-close" type="submit" value="Order now">
+                    <div class="forgot-password"><label><input type="checkbox" checked="checked">Remember Me</label><a
+                            href="#">Forgot Password?</a></div>
+                </div>
+                <div class="modal-window__col">
+                    <p class="modal-window__block-header--em">Subscribe and get more options!</p>
+                    <a href="#" class="fb social-media__btn modalBtn-close">
+                        <i class="fab fa-facebook-square"></i> Sign In With Facebook
+                    </a>
+                    <a href="#" class="twitter social-media__btn modalBtn-close">
+                        <i class="fab fa-twitter-square"></i> Sign In With Twitter
+                    </a>
+                    <a href="#" class="google social-media__btn modalBtn-close">
+                        <i class="fab fa-google-plus-square"></i> Sign In With Google+
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script src="slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
