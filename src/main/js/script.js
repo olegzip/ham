@@ -1,12 +1,36 @@
-let tab;
-let tabContent;
-
 (function ($, undefined) {
 
-    $('.our-services__nav__item a').click(function (e) {
-        e.preventDefault();
-    });
+//pure JavaScript:
 
+// MODAL WINDOW
+    let modalBtn = document.getElementsByClassName("modalBtn");
+    let modalBtnClose = document.getElementsByClassName("modalBtn-close");
+    let modal = document.getElementsByClassName("modal-window")[0];
+
+    for (let i = 0; i < modalBtn.length; i++) {
+        modalBtn[i].onclick = function (event) {
+            modal.style.display = 'block';
+        }
+    }
+
+    for (let i = 0; i < modalBtnClose.length; i++) {
+        modalBtnClose[i].onclick = function (event) {
+            modal.style.display = 'none';
+        }
+    }
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+
+    };
+
+
+//TABS FOR Our Services SECTION
+
+    let tab;
+    let tabContent;
     tabContent = document.getElementsByClassName('our-services__description');
     tab = document.getElementsByClassName('our-services__nav__item');
     hideTabsContent(1);
@@ -40,10 +64,20 @@ let tabContent;
         }
     }
 
+
+//using jQUERY:
+
+    //Remove default behavior for links in OUR SERVICES section
+    $('.our-services__nav__item a').click(function (e) {
+        e.preventDefault();
+    });
+
+    //Remove default behavior for links in BREAKING NEWS section
     $('.breaking-news__gallery__item a').click(function (e) {
         e.preventDefault();
     });
 
+    //HOVER for BREAKING NEWS section items
     $('.breaking-news__gallery__item').hover(function () {
         $(this).find('.breaking-news__gallery__item__date').css("background-color", "rgb(17, 208, 172)");
         $(this).find('.breaking-news__gallery__item__text').css("color", "rgb(17, 208, 172)");
@@ -60,7 +94,7 @@ let tabContent;
         arrows: false,
         fade: false,
         speed: 100,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         asNavFor: '.slider-nav',
         rtl: false
@@ -72,7 +106,7 @@ let tabContent;
         arrows: false,
         fade: false,
         speed: 100,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         asNavFor: '.slider-nav'
     });
@@ -85,13 +119,11 @@ let tabContent;
         centerMode: false,
         centerPadding: '60px',
         focusOnSelect: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         arrows: true,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>'
-
     });
-
 
 })(jQuery);
