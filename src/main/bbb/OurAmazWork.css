@@ -1,0 +1,127 @@
+.our-amazing-work {
+    background-color: rgb(248, 252, 254);
+    /*height: 1212px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_best{
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.section-header {
+    width: 1160px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 80px auto;
+    text-align: center;
+    font-size: 36px;
+    color: #4e4e4e;
+    font-weight: 400;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 76px;
+    border-bottom: 1px solid rgb(17, 208, 172);
+    left: 46%;
+    top: 70px;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 76px;
+    border-bottom: 1px solid rgb(17, 208, 172);
+    left: 47%;
+    top: 74px;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    float: left;
+    /*background-color: #2196F3;*/
+    color: #ffffff;
+    text-align: center;
+    margin: 2px;
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 166px;
+    height: 41px;
+    text-decoration: none;
+    background-color: rgb(0, 204, 246);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0 14px;
+    padding-top: 20px;
+    box-shadow: 0 -4px white;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /*text-align: center;*/
+    list-style: none;
+    padding-bottom: 25px;
+}
+.btna{
+    box-sizing: border-box;
+    width: 112px;
+    height: 50px;
+    font-size: 14px;
+    color: #717171;
+    text-align: center;
+    background-color: rgb(248, 252, 254);
+    border: 0.5px solid rgb(236, 240, 241);
+    padding-top: 25px;
+
+}
+.btna:hover{
+    cursor: pointer;
+}
+
+.btn:link, .btn:visited {
+    position: relative;
+    display: inline-block;
+    width: 166px;
+    height: 41px;
+    text-decoration: none;
+    background-color: rgb(0, 204, 246);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0 14px;
+    /*padding-top: 20px;*/
+    box-shadow: 0 -4px white;
+}
+
+.btn:hover {
+    background-color: rgb(17, 208, 172);
+}
